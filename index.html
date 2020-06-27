@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <script src="app.js"></script>
+
+
+    <h1 class="calc">My Calculator</h1>
+    <div class="container">
+        <form name="form">
+            <div class="display">
+                <input id="result" type="text" placeholder="0" name="displayResult" />
+
+            </div>
+
+            <div class="buttons">
+                <div class="row">
+                    <input class="color" type="button" name="b7" value="7" onclick="getNumber('7')">
+                    <input type="button" name="b8" value="8" onclick="getNumber('8')">
+                    <input class="color" type="button" name="b9" value="9" onclick="getNumber('9')">
+                    <input type="button" name="plus" value="+" onclick="getNumber('+')">
+
+
+                </div>
+
+                <div class="row">
+                    <input type="button" name="b4" value="4" onclick="getNumber('4')">
+                    <input class="color" type="button" name="b5" value="5" onclick="getNumber('5')">
+                    <input type="button" name="b6" value="6" onclick="getNumber('6')">
+                    <input class="color" type="button" name="minus" value="-" onclick="getNumber('-')">
+
+
+                </div>
+
+                <div class="row">
+                    <input class="color" type="button" name="b1" value="1" onclick="getNumber('1')">
+                    <input type="button" name="b2" value="2" onclick="getNumber('2')">
+                    <input class="color" type="button" name="b3" value="3" onclick="getNumber('3')">
+                    <input type="button" name="multi" value="*" onclick="getNumber('*')">
+
+
+                </div>
+                <div class="row">
+                    <input type="button" name="b0" value="0" onclick="getNumber('0')">
+                    <input class="color" type="button" name="dot" value="." onclick="getNumber('.')">
+                    <input type="button" name="divi" value="/" onclick="calc(divi.value)">
+                    <input class="color" type="button" name="equal" value="=" onclick="getResult()"  >
+
+                    <input class="clearbtn" type="button" name="clear" value="C" onclick="clearDisplay()">
+
+                </div>
+                
+               
+            </div>
+           
+            
+               
+           
+           
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
